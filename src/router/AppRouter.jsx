@@ -4,10 +4,14 @@ import {PokemonsPage} from '../pages/pokemonsPage/PokemonsPage'
 
 export const AppRouter = () => {
   return (
-    <Routes>
-      <Route path='/' element={<HomePage />} />
+    <>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
 
-      <Route path='pokemons/:pokemonId' element={<PokemonsPage />} />
-    </Routes>
+        <Route path='pokemons/:pokemonId' element={<PokemonsPage />} />
+
+        <Route path='/*' element={<HomePage />} />
+      </Routes>
+    </>
   )
 }

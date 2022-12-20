@@ -11,10 +11,11 @@ const PokemonProvider = ({children}) => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        'https://pokeapi.co/api/v2/pokemon/?limit=30',
+        'https://pokeapi.co/api/v2/pokemon/?limit=100',
       )
 
-      setCharacters(response.data)
+
+      setCharacters(response.data.results)
     } catch (error) {
       console.log(error)
     }
