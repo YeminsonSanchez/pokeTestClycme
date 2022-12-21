@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.0",
     "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
+    "chart.js": "^4.1.1",
     "framer-motion": "^7.10.3",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.1.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.5.0"
+    "react-router-dom": "^6.5.0",
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
