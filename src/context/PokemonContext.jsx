@@ -9,12 +9,18 @@ const PokemonProvider = ({children}) => {
     getData()
   }, [])
   const getData = async () => {
-    try {
-      const response = await axios.get(
-        'https://pokeapi.co/api/v2/pokemon/?limit=30',
-      )
+    const data = []
 
-      setCharacters(response.data)
+    try {
+      for (let i = 1; i <= 51; i++) {
+        const response = await axios.get(
+          `https://pokeapi.co/api/v2/pokemon/${i}`,
+        )
+
+        data.push(response.data)
+      }
+
+      setCharacters(data)
     } catch (error) {
       console.log(error)
     }
