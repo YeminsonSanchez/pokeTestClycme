@@ -1,0 +1,14 @@
+.card__bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://img.freepik.com/foto-gratis/fondo-futurista-abstracto-diseno-3d_1361-3532.jpg?w=1800&t=st=1671587391~exp=1671587991~hmac=fa65c844e5fe9cc1c052d5b2a0b197b72aedf239a53fd4ec0cdbbac887040cba')
+      center center no-repeat,
+    #ffc107;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0.025rem 0.15rem #ffc107;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+}
